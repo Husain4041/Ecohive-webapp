@@ -27,11 +27,6 @@ export const PasswordInput: React.FC<PasswordInputProps> = ({
         onClick={() => setShowPassword(!showPassword)}
         aria-label={showPassword ? "Hide password" : "Show password"}
       >
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/e97f4b049aa04c0fb59c904d1d337327/2d6ead22941b8cc9eb9946c6bedc35ddeb7c7c139b333d2614e769b94e221f2b?placeholderIfAbsent=true"
-          alt=""
-          className="object-contain shrink-0 aspect-square w-[25px]"
-        />
       </button>
     </div>
   );

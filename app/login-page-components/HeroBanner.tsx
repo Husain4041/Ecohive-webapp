@@ -9,8 +9,8 @@ export const HeroBanner: React.FC = () => {
           alt="Eco Hive Logo"
           className="object-contain max-w-full aspect-[0.7] w-[270px]"
         />
-        <h1 className="text-6xl text-amber-50 max-md:text-4xl">Eco Hive</h1>
-        <p className="self-stretch mt-5 text-xl text-center text-stone-600">
+        <h1 className="text-6xl text-amber-50 max-md:text-4xl italic">Eco Hive</h1>
+        <p className="self-stretch mt-5 text-xl text-center text-stone-600 italic">
           Your Home, Smarter. Your Life, Simpler. Step into the Future Today!
         </p>
       </div>
