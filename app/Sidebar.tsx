@@ -56,7 +56,7 @@ export const Sidebar: React.FC = () => {
 
       {/* Sidebar */}
       <nav className={`
-        flex flex-col py-14 px-5 w-[250px] h-full text-xl font-bold bg-[#9CAD88] rounded-[36px]
+        flex flex-col py-14 px-5 w-[250px] h-full text-xl font-bold bg-[#9CAD88]
         fixed top-0 left-0 transition-transform duration-300 ease-in-out
         max-md:w-64 max-md:h-screen max-md:rounded-none max-md:z-40
         ${isMobileMenuOpen ? 'max-md:translate-x-0' : 'max-md:-translate-x-full'}
