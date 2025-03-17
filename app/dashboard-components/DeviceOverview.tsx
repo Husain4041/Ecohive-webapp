@@ -5,24 +5,24 @@ import { DeviceCard } from "./DeviceCard";
 
 export const DeviceOverview: React.FC = () => {
   return (
-    <section className="flex flex-col mt-1.5 w-full">
-      <div className="flex relative flex-col pt-3.5 pr-20 pb-10 pl-8 w-full rounded-xl min-h-[215px]">
+    <section className="flex flex-col mt-1 w-full">
+      <div className="flex relative flex-col pt-3 pr-16 pb-8 pl-6 w-full rounded-xl min-h-[180px]">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/e97f4b049aa04c0fb59c904d1d337327/5c45d3575949aaa633bbee6af3db1e649f809588c4c9a34c46315cf3b5cdbf39?placeholderIfAbsent=true"
           className="object-cover absolute inset-0 size-full rounded-xl"
           alt="Background"
         />
-        <div className="flex relative flex-col self-center max-w-full text-center text-stone-600 w-[234px]">
-          <h2 className="text-xl font-bold">Greenwood Residence</h2>
-          <p className="self-start mt-2.5 text-base font-medium">
+        <div className="flex relative flex-col self-center max-w-full text-center text-stone-600 w-[220px]">
+          <h2 className="text-lg font-bold">Greenwood Residence</h2>
+          <p className="self-start mt-2 text-sm font-medium">
             123 Eco Street, London, UK
           </p>
         </div>
 
-        <div className="flex relative gap-5 justify-between mt-6 max-w-full text-xs text-black w-[382px]">
+        <div className="flex relative gap-4 justify-between mt-4 max-w-full text-xs text-black w-[360px]">
           <div className="flex flex-col items-start self-start">
-            <h3 className="text-sm font-medium">Dwellers:</h3>
-            <ul className="mt-3 space-y-2">
+            <h3 className="text-xs font-medium">Dwellers:</h3>
+            <ul className="mt-2 space-y-1.5">
               <li>Lelah Nickols (Home Manager)</li>
               <li>Nicolas Jackson (Resident)</li>
               <li>Robert b. lewis (Guest)</li>
@@ -30,8 +30,8 @@ export const DeviceOverview: React.FC = () => {
             </ul>
           </div>
           <div className="flex flex-col items-start">
-            <h3 className="text-sm font-medium">Devices:</h3>
-            <ul className="mt-3 space-y-2">
+            <h3 className="text-xs font-medium">Devices:</h3>
+            <ul className="mt-2 space-y-1.5">
               <li>Living Room Lights</li>
               <li>Kitchen AC</li>
               <li>Smart Thermostat</li>
@@ -42,11 +42,11 @@ export const DeviceOverview: React.FC = () => {
         </div>
       </div>
 
-      <h2 className="self-start mt-6 text-2xl font-bold leading-snug text-stone-600">
+      <h2 className="self-start mt-4 text-xl font-bold leading-snug text-stone-600">
         Device Overview
       </h2>
 
-      <div className="grid grid-cols-3 gap-5 mt-7">
+      <div className="grid grid-cols-3 gap-4 mt-5">
         <DeviceCard
           icon="https://cdn.builder.io/api/v1/image/assets/e97f4b049aa04c0fb59c904d1d337327/aebb2b2f56b616a1b636df1c57a8d0e4b83b9fa94b12fc0b5bf4a040069f5443?placeholderIfAbsent=true"
           title="Thermostat"
@@ -70,7 +70,7 @@ export const DeviceOverview: React.FC = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-5 mt-7 max-w-[502px]">
+      <div className="grid grid-cols-2 gap-4 mt-5 max-w-[502px]">
         <DeviceCard
           icon="https://cdn.builder.io/api/v1/image/assets/e97f4b049aa04c0fb59c904d1d337327/054858d91004c5b39aa9cea54841dc769832629038d1c513467adb5d0d3ed372?placeholderIfAbsent=true"
           title="Spotlights"
