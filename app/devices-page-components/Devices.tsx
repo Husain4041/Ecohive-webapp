@@ -5,11 +5,15 @@ import { DeviceList } from "./DeviceList";
 
 export default function Devices() {
   return (
-    <div className="overflow-hidden px-16 py-16 rounded-xl bg-[#EEECDE] max-md:px-5">
-      <div className="flex gap-5 max-md:flex-col">
-        <Sidebar />
-        <DeviceList />
+    <main className="h-screen overflow-hidden px-12 pt-6 pb-4 rounded-xl bg-[#EEECDE]">
+      <div className="flex gap-3 h-full">
+        <aside className="w-[18%]">
+          <Sidebar />
+        </aside>
+        <div className="w-[82%]">
+          <DeviceList />
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
