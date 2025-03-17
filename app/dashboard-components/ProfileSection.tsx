@@ -2,6 +2,10 @@
 
 import React from "react";
 import { PieChart, Pie, Cell } from "recharts";
+import { users } from "../data/users";
+
+// Assuming first user is the logged in user
+const currentUser = users[0];
 
 const data = [
   { name: "Lights", value: 30, color: "#99f6e4" },   // teal-200
@@ -10,22 +14,27 @@ const data = [
   { name: "Security", value: 25, color: "#86efac" },  // green-300
 ];
 
-
 export const ProfileSection: React.FC = () => {
   return (
     <section className="flex flex-col grow items-center px-6 pt-8 pb-4 w-full bg-[#FFFDEE] rounded-[50px]">
-    
-    <img
-        src="https://cdn.builder.io/api/v1/image/assets/e97f4b049aa04c0fb59c904d1d337327/141d624aa64764dbd3b4950c64b8a5532929dede97a67787f0eb1b370f9b25c8?placeholderIfAbsent=true"
+      <img
+        src={currentUser.image}
         className="object-contain rounded-full aspect-[1.1] w-[65px]"
-        alt="Profile picture"
+        alt={`${currentUser.name}'s profile picture`}
       />
-      <h2 className="mt-4 text-lg font-semibold text-black">Welcome Lelah!</h2>
+      <h2 className="mt-4 text-lg font-semibold text-black">
+        Welcome {currentUser.name.split(' ')[0]}!
+      </h2>
 
       <div className="flex flex-col self-stretch px-3 py-5 mt-5 bg-[#EEECDE] rounded-[53px]">
-        <h3 className="self-start ml-3 text-lg font-semibold text-stone-600">
-          Energy this week
-        </h3>
+        <div className="flex justify-between items-center ml-3 mr-3">
+          <h3 className="text-lg font-semibold text-stone-600">
+            Energy this week
+          </h3>
+          <span className="text-sm font-medium text-stone-600">
+            Role: {currentUser.role}
+          </span>
+        </div>
 
         <div className="flex overflow-hidden flex-col px-8 pt-6 mt-1 w-full bg-[#EEECDE] bg-opacity-70">
           <div className="flex gap-2 items-start text-[10px] font-bold text-black whitespace-nowrap">
@@ -66,7 +75,9 @@ export const ProfileSection: React.FC = () => {
                   <span className="font-extrabold">This Week</span>
                 </p>
                 <p className="text-lg">136.99 kWh</p>
-                <p className="mt-2 text-xs text-green-500">Saved 79.38</p>
+                <p className="mt-2 text-xs text-green-500">
+                  Saved {currentUser.energySaved}
+                </p>
               </div>
             </div>
           </div>
