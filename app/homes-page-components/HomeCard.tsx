@@ -12,15 +12,15 @@ export const HomeCard: React.FC<HomeCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <article className="flex items-center p-3.5 bg-amber-50 rounded-xl w-auto h-[16.67%] max-w-[250px]">
-      <div className = "flex flex-col text-center">
-        <div className="flex flex-row">
-            <img src={imageUrl} alt="Home" className="h-[40%] w-[36%]" />
-            <h2 className="mx-0 my-2.5 text-xl font-bold text-stone-600">
+    <article className="flex items-center p-6 bg-amber-50 rounded-xl w-[300px]">
+      <div className="flex flex-col text-center w-full">
+        <div className="flex flex-row items-center gap-4">
+            <img src={imageUrl} alt="Home" className="w-20 h-20" />
+            <h2 className="text-xl font-bold text-stone-600">
             {name}
             </h2>
         </div>
-        <div>
+        <div className="mt-4">
             <p className="text-base font-medium text-stone-600">{address}</p>
         </div>
       </div>

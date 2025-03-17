@@ -12,10 +12,9 @@ const HomeSelection: React.FC = () => {
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,800&display=swap"
         rel="stylesheet"
       />
-      <main className="relative min-h-screen bg-amber-50 md:overflow-hidden md:px-20 max-md:h-full max-md:overflow-auto]">
+      <main className="relative h-screen bg-amber-50 p-[5%] verflow-hidden">
         <BackButton imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/ba1c679bc4893fa5d27e1c2276cde3abfbf2d424" />
-        <section className="flex flex-col items-center justify-center w-full h-[95vh] bg-[#9CAD88] py-16 px-8 mt-5">
-          <header className="mb-6">
+        <section className="flex flex-col items-center justify-center w-full h-[85vh] max-md:h-[95vh] bg-[#9CAD88] py-16 px-8">          <header className="mb-6">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/6daff7273a7a6570ce15f7b54d4b9205df11006b"
               alt="Logo"
