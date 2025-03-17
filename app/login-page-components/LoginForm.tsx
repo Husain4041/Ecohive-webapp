@@ -97,10 +97,12 @@ export const LoginForm: React.FC = () => {
         Forgot Password
       </button>
 
-      <button
-        type="submit"
-        className="self-center px-16 py-5 mt-7 max-w-full text-amber-50 rounded-xl w-[238px] max-md:px-5 bg-[#9CAD88] cursor-pointer"
-      >
+    
+        
+<button
+            type="submit"  onClick={() => router.push('../homes-page-components')}
+              className="self-center px-16 py-5 mt-7 max-w-full text-amber-50 rounded-xl w-[238px] max-md:px-5 bg-[#9CAD88] cursor-pointer"
+            >
         Sign In
       </button>
 
