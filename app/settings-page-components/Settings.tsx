@@ -2,20 +2,28 @@
 import * as React from "react";
 import { Sidebar } from "../Sidebar";
 import { HomeManagement } from "./HomeManagement";
-import { RoomManagement } from "./RoomManagement";
+import { UserSettings } from "./UserSettings";
 
 export default function Settings() {
+  const userInitialData = {
+    name: "Lelah Nichols",
+    email: "l.nichols@hw.ac.uk",
+    profilePicture: "https://cdn.builder.io/api/v1/image/assets/e97f4b049aa04c0fb59c904d1d337327/141d624aa64764dbd3b4950c64b8a5532929dede97a67787f0eb1b370f9b25c8",
+  };
+
   return (
-    <div className="overflow-hidden px-16 py-16 rounded-xl bg-[#EEECDE] max-md:px-5">
-      <div className="flex gap-5 max-md:flex-col">
-        <div className="w-[22%] max-md:ml-0 max-md:w-full">
+    <div className="h-screen overflow-hidden px-12 pt-6 pb-4 rounded-xl bg-[#EEECDE]">
+      <div className="flex gap-3 h-full">
+        <div className="w-[18%]">
           <Sidebar />
         </div>
-        <main className="ml-5 w-[81%] max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col mt-9 text-black max-md:mt-10 max-md:max-w-full">
-            <h1 className="self-start text-2xl font-semibold">Settings</h1>
-            <HomeManagement />
-            <RoomManagement />
+        <main className="w-[82%] flex flex-col h-full">
+          <h1 className="text-xl font-semibold text-black mb-4">Settings</h1>
+          <div className="flex-1 overflow-auto">
+            <div className="space-y-4">
+              <UserSettings initialData={userInitialData} />
+              <HomeManagement />
+            </div>
           </div>
         </main>
       </div>
