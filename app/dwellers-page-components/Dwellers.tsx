@@ -13,17 +13,8 @@ export default function Dwellers() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        setDwellers(users);
-      } catch (error) {
-        console.error('Failed to fetch users:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchUsers();
+    setDwellers(users);
+    setIsLoading(false);
   }, []);
 
   const homeManagers = dwellers.filter(user => user.role === "Home Manager");
